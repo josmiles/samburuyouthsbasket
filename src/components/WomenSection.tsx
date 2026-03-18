@@ -46,7 +46,7 @@ export default function WomenSection() {
           </div>
           <div className="relative">
             <img
-              src="/images/woman-planting.jpg"
+              src="/images/woman-planting.webp"
               alt="Samburu woman in traditional beadwork planting seedlings"
               className="rounded-3xl w-full h-80 md:h-[500px] object-cover"
               loading="lazy"

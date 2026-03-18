@@ -3,7 +3,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-moran.jpg"
+          src="/images/hero-moran.webp"
           alt="A Samburu Moran walking through green farmland towards the mountains"
           className="w-full h-full object-cover brightness-[0.4]"
           loading="eager"

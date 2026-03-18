@@ -55,7 +55,7 @@ export default function InvestSection() {
           </div>
         </div>
         <img
-          src="/images/moran-farming.jpg"
+          src="/images/moran-farming.webp"
           alt=""
           className="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-15 hidden lg:block"
           aria-hidden="true"

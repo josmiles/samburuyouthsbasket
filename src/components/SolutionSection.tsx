@@ -6,25 +6,25 @@ const pillars = [
     icon: Leaf,
     title: "Permaculture Farming",
     text: "Mimicking natural ecosystems to grow food with minimal water and zero chemical inputs.",
-    img: "/images/squash-plants.jpg",
+    img: "/images/squash-plants.webp",
   },
   {
     icon: TreePine,
     title: "Agroforestry",
     text: "Integrating nitrogen-fixing trees to restore soil health and provide sustainable fodder.",
-    img: "/images/seedlings-nursery.jpg",
+    img: "/images/seedlings-nursery.webp",
   },
   {
     icon: Warehouse,
     title: "Feedlot Livestock",
     text: "Moving from nomadic grazing to intensive, high-value livestock management systems.",
-    img: "/images/solar-infrastructure.jpg",
+    img: "/images/solar-infrastructure.webp",
   },
   {
     icon: Coins,
     title: "Youth & Women SACCO",
     text: "A community-owned financial vehicle providing credit and economic resilience to women entrepreneurs.",
-    img: "/images/women-seedlings.jpg",
+    img: "/images/women-seedlings.webp",
   },
 ];
 

@@ -13,25 +13,25 @@ export default function WhoWeAreSection() {
         >
           <div className="grid grid-cols-2 gap-3">
             <img
-              src="/images/community-planting.jpg"
+              src="/images/community-planting.webp"
               alt="Community members planting trees together"
               className="rounded-2xl object-cover w-full h-48 md:h-64"
               loading="lazy"
             />
             <img
-              src="/images/woman-planting.jpg"
+              src="/images/woman-planting.webp"
               alt="Samburu woman planting seedlings"
               className="rounded-2xl object-cover w-full h-48 md:h-64 mt-8"
               loading="lazy"
             />
             <img
-              src="/images/team-photo.jpg"
+              src="/images/team-photo.webp"
               alt="Youth team working the farm together"
               className="rounded-2xl object-cover w-full h-48 md:h-64"
               loading="lazy"
             />
             <img
-              src="/images/samburu-culture.jpg"
+              src="/images/samburu-culture.webp"
               alt="Samburu person in traditional beadwork"
               className="rounded-2xl object-cover w-full h-48 md:h-64 mt-8"
               loading="lazy"

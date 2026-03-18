@@ -17,7 +17,7 @@ export default function BeforeAfterSection() {
         >
           <div className="relative rounded-3xl overflow-hidden">
             <img
-              src="/images/before-dry-land.jpg"
+              src="/images/before-dry-land.webp"
               alt="Before: dry arid land with women tilling soil"
               className="w-full h-64 md:h-96 object-cover"
               loading="lazy"
@@ -28,7 +28,7 @@ export default function BeforeAfterSection() {
           </div>
           <div className="relative rounded-3xl overflow-hidden">
             <img
-              src="/images/after-green-farm.jpg"
+              src="/images/after-green-farm.webp"
               alt="After: lush green vegetation and growing trees"
               className="w-full h-64 md:h-96 object-cover"
               loading="lazy"

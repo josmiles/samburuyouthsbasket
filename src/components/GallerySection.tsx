@@ -2,18 +2,18 @@ import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/images/community-planting.jpg", alt: "Community tree planting day", category: "Farm" },
-  { src: "/images/woman-planting.jpg", alt: "Samburu woman planting with traditional beadwork", category: "Women" },
-  { src: "/images/watermelon-harvest.jpg", alt: "Harvesting watermelon from the farm", category: "Farm" },
-  { src: "/images/citrus-tree.jpg", alt: "Citrus tree bearing fruit", category: "Farm" },
-  { src: "/images/tree-tomatoes.jpg", alt: "Tree tomatoes growing on the vine", category: "Farm" },
-  { src: "/images/moran-farming.jpg", alt: "Moran working the green farm", category: "Farm" },
-  { src: "/images/woman-watering.jpg", alt: "Woman watering crops with a watering can", category: "Women" },
-  { src: "/images/women-seedlings.jpg", alt: "Women carrying seedlings for planting", category: "Women" },
-  { src: "/images/seedlings-nursery.jpg", alt: "Tree seedlings in a nursery", category: "Farm" },
-  { src: "/images/solar-infrastructure.jpg", alt: "Solar panels powering farm infrastructure", category: "Transformation" },
-  { src: "/images/team-photo.jpg", alt: "Team members working on the farm", category: "Farm" },
-  { src: "/images/farm-fencing.jpg", alt: "Fenced farm area with growing crops", category: "Transformation" },
+  { src: "/images/community-planting.webp", alt: "Community tree planting day", category: "Farm" },
+  { src: "/images/woman-planting.webp", alt: "Samburu woman planting with traditional beadwork", category: "Women" },
+  { src: "/images/watermelon-harvest.webp", alt: "Harvesting watermelon from the farm", category: "Farm" },
+  { src: "/images/citrus-tree.webp", alt: "Citrus tree bearing fruit", category: "Farm" },
+  { src: "/images/tree-tomatoes.webp", alt: "Tree tomatoes growing on the vine", category: "Farm" },
+  { src: "/images/moran-farming.webp", alt: "Moran working the green farm", category: "Farm" },
+  { src: "/images/woman-watering.webp", alt: "Woman watering crops with a watering can", category: "Women" },
+  { src: "/images/women-seedlings.webp", alt: "Women carrying seedlings for planting", category: "Women" },
+  { src: "/images/seedlings-nursery.webp", alt: "Tree seedlings in a nursery", category: "Farm" },
+  { src: "/images/solar-infrastructure.webp", alt: "Solar panels powering farm infrastructure", category: "Transformation" },
+  { src: "/images/team-photo.webp", alt: "Team members working on the farm", category: "Farm" },
+  { src: "/images/farm-fencing.webp", alt: "Fenced farm area with growing crops", category: "Transformation" },
 ];
 
 const categories = ["All", "Farm", "Women", "Transformation"];

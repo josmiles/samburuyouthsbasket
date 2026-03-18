@@ -1,4 +1,4 @@
-import { Target, Eye, Heart, Lightbulb } from "lucide-react";
+import { Target, Heart, Lightbulb, Users2 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const values = [
@@ -7,8 +7,6 @@ const values = [
   { icon: Lightbulb, label: "Innovation" },
   { icon: Target, label: "Community Ownership" },
 ];
-
-import { Users2 } from "lucide-react";
 
 export default function MissionSection() {
   const { ref, isVisible } = useScrollReveal();

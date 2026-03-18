@@ -1,4 +1,5 @@
 import { Mail, Phone, Linkedin } from "lucide-react";
+import ExternalLink from "@/components/ExternalLink";
 
 export default function Footer() {
   return (
@@ -18,26 +19,29 @@ export default function Footer() {
             Connect
           </h4>
           <div className="space-y-3 text-sm">
-            <a
+            <ExternalLink
               href="mailto:josephlesorogol140@gmail.com"
               className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors"
             >
               <Mail size={14} aria-hidden="true" />
               josephlesorogol140@gmail.com
-            </a>
-            <div className="flex items-center gap-2 text-primary-foreground/70">
+            </ExternalLink>
+            <ExternalLink
+              href="https://wa.me/254716267141"
+              showIcon
+              className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors"
+            >
               <Phone size={14} aria-hidden="true" />
               +254 716 267 141
-            </div>
-            <a
+            </ExternalLink>
+            <ExternalLink
               href="https://www.linkedin.com/in/joseph-lesorogol-a98117253/"
-              target="_blank"
-              rel="noopener noreferrer"
+              showIcon
               className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors"
             >
               <Linkedin size={14} aria-hidden="true" />
               LinkedIn Profile
-            </a>
+            </ExternalLink>
           </div>
         </div>
         <div>

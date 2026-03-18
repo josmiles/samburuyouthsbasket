@@ -1,5 +1,6 @@
 import { Mail, Phone, Linkedin } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import ExternalLink from "@/components/ExternalLink";
 
 export default function ContactSection() {
   const { ref, isVisible } = useScrollReveal();
@@ -16,31 +17,29 @@ export default function ContactSection() {
           Ready to partner, invest, or learn more? We'd love to hear from you.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a
+          <ExternalLink
             href="mailto:josephlesorogol140@gmail.com"
             className="flex items-center gap-2 text-foreground hover:text-accent transition-colors text-sm"
           >
             <Mail size={18} aria-hidden="true" />
             josephlesorogol140@gmail.com
-          </a>
-          <a
+          </ExternalLink>
+          <ExternalLink
             href="https://wa.me/254716267141"
-            target="_blank"
-            rel="noopener noreferrer"
+            showIcon
             className="flex items-center gap-2 text-foreground hover:text-accent transition-colors text-sm"
           >
             <Phone size={18} aria-hidden="true" />
             +254 716 267 141
-          </a>
-          <a
+          </ExternalLink>
+          <ExternalLink
             href="https://www.linkedin.com/in/joseph-lesorogol-a98117253/"
-            target="_blank"
-            rel="noopener noreferrer"
+            showIcon
             className="flex items-center gap-2 text-foreground hover:text-accent transition-colors text-sm"
           >
             <Linkedin size={18} aria-hidden="true" />
             LinkedIn
-          </a>
+          </ExternalLink>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import ExternalLink from "@/components/ExternalLink";
 
 const items = [
   "Solar-powered Drip Irrigation Infrastructure",
@@ -38,20 +39,19 @@ export default function InvestSection() {
             ))}
           </ul>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+            <ExternalLink
               href="mailto:josephlesorogol140@gmail.com"
               className="bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold text-center hover:brightness-110 transition-all"
             >
               Fund a Plot
-            </a>
-            <a
+            </ExternalLink>
+            <ExternalLink
               href="https://wa.me/254716267141"
-              target="_blank"
-              rel="noopener noreferrer"
+              showIcon
               className="bg-primary-foreground text-foreground px-8 py-4 rounded-full font-bold text-center hover:bg-secondary transition-all"
             >
               WhatsApp Inquiries
-            </a>
+            </ExternalLink>
           </div>
         </div>
         <img

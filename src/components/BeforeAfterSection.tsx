@@ -41,7 +41,7 @@ export default function BeforeAfterSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <div className="relative rounded-3xl overflow-hidden">
             <img
-              src="https://drive.google.com/uc?export=view&id=1cvZzNsvPfUqxKwUHX9IG0h0N5tftTPAx"
+              src="/images/before-new.webp"
               alt="Before: barren dry land"
               className="w-full h-64 md:h-96 object-cover"
               loading="lazy"
@@ -52,7 +52,7 @@ export default function BeforeAfterSection() {
           </div>
           <div className="relative rounded-3xl overflow-hidden">
             <img
-              src="https://drive.google.com/uc?export=view&id=1pu6oAYknHGvpQwRGANIJjAn5G62PiDdf"
+              src="/images/after-new.webp"
               alt="After: green thriving farm"
               className="w-full h-64 md:h-96 object-cover"
               loading="lazy"

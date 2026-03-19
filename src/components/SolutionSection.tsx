@@ -12,19 +12,19 @@ const pillars = [
     icon: TreePine,
     title: "Agroforestry",
     text: "Integrating nitrogen-fixing trees to restore soil health and provide sustainable fodder.",
-    img: "https://drive.google.com/uc?export=view&id=1zjKpHRT6GGcXGi1ZBUJCuAnCeZuJNd1e",
+    img: "/images/agroforestry-new.webp",
   },
   {
     icon: Warehouse,
     title: "Feedlot Livestock",
     text: "Moving from nomadic grazing to intensive, high-value livestock management systems.",
-    img: "https://drive.google.com/uc?export=view&id=1ByByR3B5pUDiiZC_uKphybvYdQggaK7r",
+    img: "/images/feedlot-new.webp",
   },
   {
     icon: Coins,
     title: "Youth & Women SACCO",
     text: "A community-owned financial vehicle providing credit and economic resilience to women entrepreneurs.",
-    img: "https://drive.google.com/uc?export=view&id=1By6J3UTPEEW4INMsTVttj_FILRVZUa0V",
+    img: "/images/women-sacco-new.webp",
   },
 ];
 

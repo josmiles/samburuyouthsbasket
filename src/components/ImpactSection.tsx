@@ -32,10 +32,11 @@ export default function ImpactSection() {
         <h2 className="font-display text-3xl md:text-5xl text-primary-foreground text-center mb-12 md:mb-16">
           Our Impact So Far
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
           <MetricCard value={1200} suffix="+" label="Trees Planted" />
           <TextMetric value="Active" label="Women's SACCO" />
-          <TextMetric value="Pilot" label="Feedlot System" />
+          <TextMetric value="Pilot" label="Permaculture Plots" />
+          <TextMetric value="Growing" label="Economic Transformation" />
           <MetricCard value={60} suffix="%" label="Women Participation" />
         </div>
       </div>

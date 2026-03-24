@@ -1,9 +1,9 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const projections = [
-  { phase: "Year 1", revenue: "800,000", scope: "Pilot Site Establishment" },
-  { phase: "Year 2", revenue: "2,000,000", scope: "Market Expansion" },
-  { phase: "Year 3", revenue: "5,000,000", scope: "Full Scale Operations", highlight: true },
+  { phase: "Year 1", revenue: "450,000", scope: "Pilot Site Establishment" },
+  { phase: "Year 2", revenue: "1,150,000", scope: "Market Expansion" },
+  { phase: "Year 3", revenue: "2,500,000", scope: "Full Scale Operations", highlight: true },
 ];
 
 export default function FinancialSection() {

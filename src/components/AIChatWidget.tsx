@@ -24,7 +24,7 @@ interface Message {
 export default function AIChatWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Hello! I'm the Samburu Youths Basket assistant. Ask me anything about our project, how to donate, or how to partner with us! 🌱" }
+    { role: "assistant", content: "Hello! I'm AgriNova AI 🌿 — your smart assistant for Samburu Youths Basket. Ask me about our farming, how to donate, invest, or partner with us!" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -49,7 +49,7 @@ export default function AIChatWidget() {
           "Authorization": `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`
         },
         body: JSON.stringify({
-          model: "llama3-8b-8192",
+          model: "llama-3.3-70b-versatile",
           messages: [
             { role: "system", content: SYSTEM_PROMPT },
             ...messages,
@@ -76,9 +76,10 @@ export default function AIChatWidget() {
       <button
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
-        aria-label="Open AI chat assistant"
+        aria-label="Open AgriNova AI assistant"
+        title="AgriNova AI"
       >
-        {open ? <X size={24} /> : <MessageCircle size={24} />}
+        {open ? <X size={24} /> : <Bot size={24} />}
       </button>
 
       {/* Chat window */}
@@ -89,8 +90,8 @@ export default function AIChatWidget() {
           <div className="bg-primary text-primary-foreground p-4 flex items-center gap-3">
             <Bot size={22} />
             <div>
-              <p className="font-semibold text-sm">Samburu AI Assistant</p>
-              <p className="text-xs opacity-70">Ask me anything about the project</p>
+              <p className="font-semibold text-sm">AgriNova AI</p>
+              <p className="text-xs opacity-70">Powered by AI — Ask me anything</p>
             </div>
           </div>
 

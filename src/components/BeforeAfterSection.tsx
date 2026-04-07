@@ -69,7 +69,7 @@ export default function BeforeAfterSection() {
           </p>
           <div className="rounded-3xl overflow-hidden aspect-video max-w-3xl mx-auto shadow-lg">
             <iframe
-              src="https://drive.google.com/file/d/1IhEFt1bgotWyNK6LoF46Wk4pmCIvlRNR/preview"
+              src="https://www.youtube.com/embed/BzQ339wF21c"
               className="w-full h-full"
               allow="autoplay"
               allowFullScreen

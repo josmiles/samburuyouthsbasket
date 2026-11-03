@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Mail, MessageCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import ExternalLink from "@/components/ExternalLink";
 
@@ -41,15 +41,16 @@ export default function InvestSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <ExternalLink
               href="mailto:josephlesorogol140@gmail.com"
-              className="bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold text-center hover:brightness-110 transition-all"
+              className="justify-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold hover:brightness-110 transition-all"
             >
+              <Mail size={18} aria-hidden="true" />
               Fund a Plot
             </ExternalLink>
             <ExternalLink
               href="https://wa.me/254716267141"
-              showIcon
-              className="bg-primary-foreground text-foreground px-8 py-4 rounded-full font-bold text-center hover:bg-secondary transition-all"
+              className="justify-center gap-2 bg-primary-foreground text-foreground px-8 py-4 rounded-full font-bold hover:bg-secondary transition-all"
             >
+              <MessageCircle size={18} aria-hidden="true" />
               WhatsApp Inquiries
             </ExternalLink>
           </div>

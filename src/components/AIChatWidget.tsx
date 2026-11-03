@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, Send, Bot, User } from "lucide-react";
+import { MessageCircle, X, Send, User } from "lucide-react";
 
 const SYSTEM_PROMPT = `You are a helpful assistant for Samburu Youths Basket, a youth-led, women-centered, climate-smart agricultural initiative in Samburu County, Northern Kenya.
 
@@ -106,7 +106,7 @@ export default function AIChatWidget() {
         aria-label="Open AgriNova AI assistant"
         title="AgriNova AI"
       >
-        {open ? <X size={24} /> : <Bot size={24} />}
+        {open ? <X size={24} /> : <img src="/images/agrinova-avatar.webp" alt="Open AgriNova AI chat" className="w-11 h-11 rounded-full object-cover" />}
       </button>
 
       {/* Chat window */}
@@ -115,7 +115,7 @@ export default function AIChatWidget() {
           style={{ height: "480px" }}>
           {/* Header */}
           <div className="bg-primary text-primary-foreground p-4 flex items-center gap-3">
-            <Bot size={22} />
+            <img src="/images/agrinova-avatar.webp" alt="AgriNova AI" className="w-10 h-10 rounded-full object-cover border-2 border-white/70" />
             <div>
               <p className="font-semibold text-sm">AgriNova AI</p>
               <p className="text-xs opacity-70">Powered by AI — Ask me anything</p>
@@ -128,7 +128,7 @@ export default function AIChatWidget() {
               <div key={i} className={`flex gap-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
                 {msg.role === "assistant" && (
                   <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                    <Bot size={14} className="text-primary" />
+                    <img src="/images/agrinova-avatar.webp" alt="" className="w-7 h-7 rounded-full object-cover" />
                   </div>
                 )}
                 <div className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${
@@ -148,7 +148,7 @@ export default function AIChatWidget() {
             {loading && (
               <div className="flex gap-2 justify-start">
                 <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Bot size={14} className="text-primary" />
+                  <img src="/images/agrinova-avatar.webp" alt="" className="w-7 h-7 rounded-full object-cover" />
                 </div>
                 <div className="bg-secondary rounded-2xl rounded-tl-sm px-4 py-2.5">
                   <div className="flex gap-1">

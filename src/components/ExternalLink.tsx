@@ -7,6 +7,8 @@ interface ExternalLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement
   children: React.ReactNode;
 }
 
+// Web links open in ONE new tab and the site stays open.
+// mailto: and tel: links open the email or phone app, with no extra tab.
 export default function ExternalLink({
   href,
   showIcon = false,
@@ -14,19 +16,12 @@ export default function ExternalLink({
   className = "",
   ...props
 }: ExternalLinkProps) {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Force new tab even inside iframes
-    e.preventDefault();
-    const w = window.open(href, "_blank", "noopener,noreferrer");
-    if (!w) window.location.href = href;
-  };
+  const isWeb = /^https?:\/\//i.test(href);
 
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={handleClick}
+      {...(isWeb ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={`inline-flex items-center gap-1.5 hover:opacity-80 transition-opacity ${className}`}
       {...props}
     >

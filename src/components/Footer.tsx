@@ -40,9 +40,6 @@ export default function Footer() {
               <Linkedin size={16} aria-hidden="true" />
               LinkedIn
             </ExternalLink>
-            <p className="pt-1 text-xs text-primary-foreground/60 leading-relaxed">
-              josephlesorogol140@gmail.com<br />+254 716 267 141
-            </p>
           </div>
         </div>
         <div>

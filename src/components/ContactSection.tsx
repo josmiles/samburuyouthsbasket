@@ -39,9 +39,6 @@ export default function ContactSection() {
             LinkedIn
           </ExternalLink>
         </div>
-        <p className="mt-6 text-sm text-muted-foreground">
-          josephlesorogol140@gmail.com · +254 716 267 141
-        </p>
       </div>
     </section>
   );

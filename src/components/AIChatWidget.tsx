@@ -14,7 +14,35 @@ Key facts about the project:
 - Partner: Zuhura Impact
 - Website: samburuyouthsbasket.pages.dev
 
-Answer questions about the project, how to donate, partner, or get involved. Be warm, professional, and inspiring. Keep answers concise and clear. If asked something you don't know, direct them to contact Joseph directly.`;
+Answer questions about the project, how to donate, partner, or get involved. Be warm, professional, and inspiring. Keep answers concise and clear. If asked something you don't know, direct them to contact Joseph directly.
+
+FORMATTING RULES (very important):
+- Reply in plain text only. Never use Markdown: no asterisks, no bold, no headings, no tables, no pipe characters.
+- Keep replies short: 2 to 5 sentences. For lists, start each line with "- ".
+- Use at most one emoji per reply.
+
+DONATIONS AND PAYMENTS (very important):
+- This website does not publish payment details yet.
+- If someone wants to donate, invest, or send money, thank them warmly, then ask them to contact Joseph by email (josephlesorogol140@gmail.com) or WhatsApp (+254716267141). Joseph will share verified payment details directly.
+- Never invent or guess bank names, account numbers, SWIFT codes, M-Pesa paybill or till numbers, PayPal links, or any other payment details.
+- Never promise receipts, tax deductions, or certificates.
+- For facts about the project (numbers, people, partners, money), use only the facts listed above.`;
+
+// Safety net: strip Markdown symbols if the model still sends them
+function cleanReply(text: string): string {
+  return text
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/\*\*(.*?)\*\*/g, "$1")
+    .replace(/^#{1,6}[ \t]+/gm, "")
+    .replace(/^[ \t]*\|?[ \t]*:?-{3,}.*$/gm, "")
+    .replace(/\|/g, " ")
+    .replace(/^[ \t]*\*[ \t]+/gm, "- ")
+    .replace(/\*/g, "")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/^ +/gm, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
 
 interface Message {
   role: "user" | "assistant";
@@ -60,7 +88,7 @@ export default function AIChatWidget() {
       });
 
       const data = await response.json();
-      const reply = data.choices?.[0]?.message?.content || "Sorry, I couldn't get a response. Please contact us directly at josephlesorogol140@gmail.com";
+      const reply = cleanReply(data.choices?.[0]?.message?.content || "") || "Sorry, I couldn't get a response. Please contact us directly at josephlesorogol140@gmail.com";
       setMessages(prev => [...prev, { role: "assistant", content: reply }]);
     } catch {
       setMessages(prev => [...prev, { role: "assistant", content: "Sorry, something went wrong. Please contact us at josephlesorogol140@gmail.com or WhatsApp +254716267141" }]);
@@ -108,7 +136,7 @@ export default function AIChatWidget() {
                     ? "bg-primary text-primary-foreground rounded-tr-sm"
                     : "bg-secondary text-foreground rounded-tl-sm"
                 }`}>
-                  {msg.content}
+                  <span className="whitespace-pre-line">{msg.content}</span>
                 </div>
                 {msg.role === "user" && (
                   <div className="w-7 h-7 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
